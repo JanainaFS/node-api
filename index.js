@@ -4,6 +4,7 @@ const requireDir = require('require-dir');
 
 //Inicializando o app.
 const app = express();
+app.use(express.json());
 
 //Inicializando o BD.
 mongoose.connect('mongodb://localhost:27017/nodeapi', { useUnifiedTopology: true, useNewUrlParser: true });
