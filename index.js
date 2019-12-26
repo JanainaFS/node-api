@@ -9,6 +9,7 @@ app.use(express.json());
 //Inicializando o BD.
 mongoose.connect('mongodb://localhost:27017/nodeapi', { useUnifiedTopology: true, useNewUrlParser: true });
 
+//Importando os models
 requireDir('./src/models');
 
 //Rotas
